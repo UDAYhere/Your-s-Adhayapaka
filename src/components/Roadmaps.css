@@ -1,0 +1,205 @@
+.roadmaps-container {
+    padding: 6rem 5% 3rem;
+    background-color: var(--light-gray);
+    min-height: 100vh;
+}
+
+.roadmaps-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.roadmaps-header h1 {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.roadmaps-header p {
+    font-size: 1.3rem;
+    color: var(--gray);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.roadmaps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.roadmap-card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: auto;
+    min-height: 300px;
+}
+
+.roadmap-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.roadmap-icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+}
+
+.roadmap-card:hover .roadmap-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.roadmap-card h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.roadmap-card p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+    min-width: 150px;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+}
+
+.explore-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+    border-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.language-icons, .tech-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.language-icons a, .tech-icons a {
+    color: var(--white);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    border: 2px solid transparent;
+}
+
+.language-icons a:hover, .tech-icons a:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-dark);
+    border-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .roadmaps-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .roadmaps-container {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .roadmaps-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .roadmaps-header p {
+        font-size: 1.2rem;
+    }
+
+    .roadmaps-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .roadmap-card {
+        padding: 1.8rem;
+        min-height: 280px;
+    }
+
+    .language-icons, .tech-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .explore-btn {
+        min-width: 130px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .roadmaps-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .roadmap-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .roadmap-icon {
+        font-size: 3rem;
+        width: 70px;
+        height: 70px;
+    }
+
+    .language-icons, .tech-icons {
+        flex-direction: column;
+    }
+
+    .explore-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+} 

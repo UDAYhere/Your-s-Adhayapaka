@@ -1,0 +1,181 @@
+.mentors {
+    padding: 8rem 5%;
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+.mentors h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.mentor-cards {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.mentor-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.mentor-card {
+    flex: 0 0 325px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mentor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.mentor-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mentor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mentor-card:hover .mentor-image img {
+    transform: scale(1.05);
+}
+
+.mentor-info {
+    padding: 2rem;
+    text-align: center;
+}
+
+.mentor-info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.mentor-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.mentor-expertise {
+    color: var(--gray);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.mentor-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.mentor-social a {
+    color: var(--gray);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+}
+
+.mentor-social a:hover {
+    color: var(--primary-color);
+    background-color: rgba(46, 204, 113, 0.1);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+    .mentors {
+        padding: 4rem 5%;
+    }
+
+    .mentors h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .mentor-cards {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mentors h2 {
+        font-size: 2rem;
+    }
+
+    .mentor-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentor-card {
+        flex: 0 0 100%;
+        max-width: 400px;
+    }
+
+    .mentor-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mentors {
+        padding: 3rem 1rem;
+    }
+
+    .mentors h2 {
+        font-size: 1.8rem;
+    }
+
+    .mentor-card {
+        max-width: 100%;
+    }
+
+    .mentor-info {
+        padding: 1.2rem;
+    }
+
+    .mentor-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .mentor-social {
+        gap: 0.5rem;
+    }
+
+    .mentor-social a {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+} 
