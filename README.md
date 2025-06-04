@@ -1,6 +1,55 @@
-# Getting Started with Create React App
+# 📘 YOUR's ADHAYAPAKA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive E-learning platform built to provide coding courses, structured roadmaps, and high-quality notes to help aspiring developers learn efficiently.
+
+---
+
+## 📌 About the Project
+
+**YOUR's ADHAYAPAKA** is a one-stop platform for students who want to dive into programming and development. Whether you're starting with Python or diving into Web Development, the platform offers:
+
+- 📚 Beginner-friendly courses  
+- 🗺️ Structured roadmaps  
+- 📥 Downloadable notes  
+- 🙋‍♂️ Mentor showcase  
+- 🔒 Login/Signup functionality  
+
+This project is aimed at improving access to quality learning resources in a clean, responsive, and organized interface.
+
+---
+
+## 📸 Screenshots
+
+| Home Page | Courses Page |
+|-----------|--------------|
+| ![Home](./screenshots/home.png) | ![Courses](./screenshots/courses.png) |
+
+
+---
+
+## ✨ Features
+
+- Interactive courses (HTML, CSS, JavaScript, Python, C++, Java, React, etc.)
+- Roadmaps for DSA, Web Dev, Android, MongoDB, and more
+- Downloadable PDFs for cheatsheets, handbooks, and notes
+- Mentor introduction section
+- Login & Signup functionality
+- Mobile responsive layout
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, JSX, CSS
+- **Icons/Assets**: Custom images, PDFs
+- **Other Tools**: Git, GitHub
+
+## 🧑‍💻 Installation & Setup
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/UDAYhere/YOUR-s-ADHAYAPAKA.git
+   cd YOUR-s-ADHAYAPAKA
 
 ## Available Scripts
 
@@ -8,39 +57,39 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in development mode.
+Open http://localhost:3000 to view it in the browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
+See more about running tests.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the build folder.
+Optimizes the React build for best performance.
 
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
+## 👨‍💻 Author
+### Uday Kumar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+GitHub: UDAYhere
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+LinkedIn: linkedin.com/in/-uday-kumar
 
-## Learn More
+Twitter: @_Uday_here
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instagram: @uday.here_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+## 🙌 Acknowledgements
+Inspiration from modern EdTech platforms like freeCodeCamp & Coursera
+
+PDF resources belong to their respective authors
+
+Create React App for bootstrapping the project
